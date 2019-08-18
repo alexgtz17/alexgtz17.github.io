@@ -1,10 +1,10 @@
----
+x---
 title: Reading List
 subtitle: a list of books I read
 layout: "page"
 icon: fa-book
 order: 3
----
+x---
 
 I love books! Here are some I'm reading now:
 

@@ -1,0 +1,25 @@
+---
+title: Skills
+icon: fa-th
+order: 3
+---
+
+<div class="row">
+  <div>
+    <div>
+      <div class="">
+        <span class=""><a href=""></a></span>
+      </div>
+      <div class="">
+        {% for skill in site.skills %}
+        {% if skill.name and skill.uri %}
+        <img src="{{skill.uri}}" style="height:{{site.icon_size}}px;" title="{{skill.name}}"></img>
+        {% else %}
+        <i class="devicon-{{skill.name}}-plain {{site.colored}}" style="font-size:{{site.icon_size}}px;"
+          title="{{skill.name}}"></i>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
